@@ -73,6 +73,7 @@ function init() {
  
 			objectStore.openCursor().onsuccess = function(event) {  
 			  var cursor = event.target.result;  
+			  alert(cursor.key);
 			  if (cursor) {  
 			  	console.log(cursor.key);
 			  	alert(cursor.key);
