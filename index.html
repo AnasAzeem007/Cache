@@ -86,8 +86,9 @@ function init() {
 			};  
  
 		});-->
-		localstorage.setItem('save',1);
-	document.write(localstorage.getItem('save'))
+		localStorage.setItem('save',1);
+	//document.getElementById('pre').setText(localStorage.getItem('save'));
+	$("pre").update(localStorage.getItem('save'));
 }
 
 	
@@ -96,6 +97,6 @@ function init() {
  
 <body onload="init()">
  
-	<button id="test">Test</button>
+	<div class="previous" id="pre">Previous</div>
 </body>
 </html>
