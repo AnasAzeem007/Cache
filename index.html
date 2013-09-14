@@ -3,7 +3,7 @@
  
 <head>
 <script>
-var db;
+<!--var db;
  
 // https://developer.mozilla.org/en/IndexedDB/Using_IndexedDB
 var indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.msIndexedDB;
@@ -11,7 +11,7 @@ var IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction;
  
 function init() {
  
-	var openRequest = indexedDB.open("notes",5);
+	<!--var openRequest = indexedDB.open("notes",5);
  
 		//handle setup
 		openRequest.onupgradeneeded = function(e) {
@@ -85,8 +85,12 @@ function init() {
 			  }  
 			};  
  
-		});
+		});-->
+		localstorage.setItem('save',1);
+	document.write(localstorage.getItem('save'))
 }
+
+	
 </script>
 </head>
  
